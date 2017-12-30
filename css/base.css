@@ -13,11 +13,11 @@ html, body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 30em;
-  height: 18em;
-  margin-left: -15em;
-  margin-top: -9em;
-  border: 1px solid white;
+  width: 40em;
+  height: 20em;
+  margin-left: -23em;
+  margin-top: -10em;
+  /* border: 1px solid white; */
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-auto-rows: 100%;
@@ -27,7 +27,6 @@ html, body {
 
 #navigation {
   background-color: transparent;
-  border-right: 1px solid white;
   height: 100%;
 }
 
@@ -45,19 +44,24 @@ html, body {
 .navItem {
   text-align: right;
   display: table-row;
+  /* border-right: 1px solid #555; */
 }
 
-span {
+.navItem:hover {
+  background-color: #555;
+}
+
+.navText {
   display: table-cell;
   padding-right: 15px;
   vertical-align: middle;
+  color: #555;
+  border-right: 1px solid #555;
 }
 
-/*span {
-  display: table-cell;
-  vertical-align: middle;
-  display: table-row;
-}*/
+.navText:hover {
+  color: #FFF;
+}
 
 /* --- Content --- */
 
