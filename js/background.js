@@ -20,4 +20,4 @@ function updateFrame() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-window.onload = setCanvasSize;
+window.addEventListener('load', setCanvasSize);

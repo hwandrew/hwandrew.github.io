@@ -4,8 +4,12 @@
   <head>
     <title>Andrew Hwang</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="js/background.js"></script>
+    <script src="js/navigation.js"></script>
+
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
 
   <body>
@@ -13,21 +17,34 @@
 
     <script>
       $(function() {
-        $("#navPlaceholder").load("navBar.html");
+        $("#navPlaceholder").load("home.html");
       });
     </script> -->
 
     <div id="centerContainer">
       <div id="navigation">
         <ul id="navList">
-          <li class="navItem"><span>about me</span></li>
-          <li class="navItem"><span>projects</span></li>
-          <li class="navItem"><span>contact</span></li>
+
+          <li class="navItem" id="homeNav" onclick="">
+            <span class="navText">home</span>
+          </li>
+          <li class="navItem" id="aboutNav">
+            <span class="navText">about me</span>
+          </li>
+          <li class="navItem" id="projNav">
+            <span class="navText">projects</span>
+          </li>
+          <li class="navItem" id="photoNav">
+            <span class="navText">photography</span>
+          </li>
+          <li class="navItem" id="contactNav">
+            <span class="navText">contact</span>
+          </li>
+
         </ul>
       </div>
-      <div id="contentGrid">
 
-      </div>
+      <div id="contentGrid"></div>
     </div>
 
     <canvas id="background"></canvas></canvas>
