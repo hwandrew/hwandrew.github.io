@@ -25,6 +25,8 @@ function initButtons() {
   contactBut.addEventListener('click', function(){
     navigate('contact');
   });
+
+  navigate('home');
 }
 
 function clickTester() {
@@ -32,26 +34,6 @@ function clickTester() {
 }
 
 function navigate(pageNum) {
-  // switch (pageNum) {
-  //   case 'home':
-  //     $('#contentGrid').load("home.html");
-  //     break;
-  //   case 'about':
-  //     $('#contentGrid').load("about.html");
-  //     break;
-  //   case 'projects':
-  //     $('#contentGrid').load("home.html");
-  //     break;
-  //   case 'photos':
-  //     $('#contentGrid').load("home.html");
-  //     break;
-  //   case 'contact':
-  //     $('#contentGrid').load("home.html");
-  //     break;
-  //   default:
-  //     $('#contentGrid').load("home.html");
-  //     break;
-  // }
   $('#contentGrid').load(pageNum + ".html");
 }
 
