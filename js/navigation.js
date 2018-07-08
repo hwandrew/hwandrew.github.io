@@ -25,9 +25,9 @@ function clickTester() {
   console.log("cliked!");
 }
 
-function navigate(pageNum) {
+function navigate(pageName) {
   var xhttp = new XMLHttpRequest();
-  xhttp.open('GET', pageNum + '.html', true);
+  xhttp.open('GET', pageName + '.html', true);
   xhttp.send();
   xhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200)
