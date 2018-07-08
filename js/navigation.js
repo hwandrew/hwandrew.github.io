@@ -1,30 +1,22 @@
 var homeBut, aboutBut, projBut, photoBut, contactBut;
 
 function initButtons() {
-  homeBut = document.getElementById('homeNav');
-  homeBut.addEventListener('click', function(){
-    navigate('home');
-  });
+  var navList = document.getElementById('navList');
+  var navItems = navList.getElementsByClassName('navItem');
+  for (var i = 0; i < navItems.length; i++)
+  {
+    navItems[i].addEventListener('click', function() {
+      var oldSelection = document.getElementsByClassName('navActive');
+      oldSelection[0].className = oldSelection[0].className.replace(' navActive', '');
+      var oldSelectionText = document.getElementsByClassName('textActive');
+      oldSelectionText[0].className = oldSelectionText[0].className.replace(' textActive', '');
+      this.className += ' navActive';
+      this.children[0].className += ' textActive';
 
-  aboutBut = document.getElementById('aboutNav');
-  aboutBut.addEventListener('click', function(){
-    navigate('about');
-  });
-
-  projBut = document.getElementById('projNav');
-  projBut.addEventListener('click', function(){
-    navigate('projects');
-  });
-
-  photoBut = document.getElementById('photoNav');
-  photoBut.addEventListener('click', function(){
-    navigate('photos');
-  });
-
-  contactBut = document.getElementById('contactNav');
-  contactBut.addEventListener('click', function(){
-    navigate('contact');
-  });
+      var navStr = this.id.replace('Nav', '');
+      navigate(navStr);
+    });
+  }
 
   navigate('home');
 }

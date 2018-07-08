@@ -63,6 +63,10 @@ html, body {
 }
 
 .navItem:hover {
+  background-color: #999;
+}
+
+.navActive {
   background-color: #555;
 }
 
@@ -74,7 +78,7 @@ html, body {
   border-right: 1px solid #555;
 }
 
-.navText:hover {
+.textActive, .navText:hover {
   color: #FFF;
 }
 
