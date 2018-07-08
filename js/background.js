@@ -16,7 +16,7 @@ function updateFrame() {
   canvas.height = window.innerHeight;
   window.requestAnimationFrame(updateFrame);
 
-  ctx.fillStyle = '#000000';
+  ctx.fillStyle = '#FFF';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
