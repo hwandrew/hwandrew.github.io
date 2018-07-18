@@ -87,3 +87,20 @@ html, body {
 #contentGrid {
   background-color: transparent;
 }
+
+
+/* --- Scroll Bar --- */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 3px;
+}
