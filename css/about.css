@@ -1,5 +1,6 @@
 #about {
   display: -ms-flex; display: -webkit-flex; display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   color: black;
@@ -24,16 +25,18 @@
 }
 
 #textContainer {
+  flex: 2;
   position: relative;
   vertical-align: middle;
   overflow-y: scroll;
   font-size: 14px;
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
   max-height: 100%;
   margin-left: 15px;
   top: 0;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
+  padding-right: 5px;
 }
