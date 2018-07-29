@@ -60,4 +60,4 @@ function navigate(pageName, fromUserNavigation) {
 window.addEventListener('load', initButtons);
 window.addEventListener('popstate', function(event) {
   navigate(event.state.pageName, false);
-})
+});
