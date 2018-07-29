@@ -11,7 +11,6 @@ html, body {
   position: absolute;
   height: 100%;
   vertical-align: middle;
-  /* margin: 0; */
 }
 
 /* ------------------------
@@ -31,7 +30,6 @@ html, body {
   min-width: 20em;
   min-height: 10em;
   margin: auto;
-  /* border: 1px solid white; */
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-auto-rows: 100%;
@@ -59,15 +57,26 @@ html, body {
 .navItem {
   text-align: right;
   display: table-row;
-  /* border-right: 1px solid #555; */
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 .navItem:hover {
   background-color: #999;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 .navActive {
   background-color: #555;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 .navText {
@@ -76,10 +85,18 @@ html, body {
   vertical-align: middle;
   color: #555;
   border-right: 1px solid #555;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 .textActive, .navText:hover {
   color: #FFF;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 /* --- Content --- */
