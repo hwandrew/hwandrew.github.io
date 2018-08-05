@@ -2,3 +2,41 @@ span {
   color: black;
   margin-left: 15px;
 }
+
+#contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactContainer {
+  margin-left: 15px;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#linkGit {
+  font-size: 350%;
+  color: black;
+  vertical-align: middle;
+}
+
+#linkLinkedin {
+  font-size: 350%;
+  color: black;
+  vertical-align: middle;
+}
+
+/* #linkInsta {
+  font-size: 48px;
+  color: black;
+} */
+
+#linkEmail {
+  font-size: 350%;
+  color: black;
+  vertical-align: middle;
+}
