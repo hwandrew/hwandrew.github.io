@@ -1,27 +1,25 @@
 <div id="projectsWrapper">
-  <!-- <span>coming soon!</span> -->
-  <!-- <span class="verticalHelper"></span> -->
 
   <div id="projects">
-    <div class="project">
+    <div class="project" id="LucentSurge" onclick="initDescription(this.id)">
       <img class="projectCover" id="LucentSurgeCover" src="media/LucentSurgeCover.png" alt="Lucent Surge" >
       <div class="projectHover">
         <div class="projectText">Lucent Surge</div>
       </div>
     </div>
-    <div class="project">
+    <div class="project" id="TerrainJumper" onclick="initDescription(this.id)">
       <img class="projectCover" id="TerrainJumperCover" src="media/TerrainJumperCover.png" alt="Terrain Jumper" >
       <div class="projectHover">
         <div class="projectText">Terrain Jumper</div>
       </div>
     </div>
-    <div class="project">
+    <div class="project" id="LegendOfZelda" onclick="initDescription(this.id)">
       <img class="projectCover" id="LegendOfZeldaCover" src="media/LegendOfZeldaCover.png" alt="Legend of Zelda Re-creation" >
       <div class="projectHover">
         <div class="projectText">Legend of Zelda re&#8209;creation</div>
       </div>
     </div>
-    <div class="project">
+    <div class="project" id="SpotifyVisualizer" onclick="initDescription(this.id)">
       <img class="projectCover" id="SpotifyVisualizerCover" src="media/SpotifyVisualizer.JPG" alt="Spotify Visualizer" >
       <div class="projectHover">
         <div class="projectText">Spotify Visualizer</div>
@@ -29,6 +27,12 @@
     </div>
     <div class="project"></div>
     <div class="project"></div>
+  </div>
+
+  <div id="projectDescription">
+    <!-- put back arrow here or x or something -->
+    <div><i class="material-icons">arrow_back</i></div>
+    <div id="descriptionText"></div>
   </div>
 
 </div>
