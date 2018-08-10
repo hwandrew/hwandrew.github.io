@@ -30,7 +30,9 @@
   opacity: 1;
   border-radius: 5px;
   transition: .3s ease;
+  -moz-transition: .3s ease;
   -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 /* --- Deals with hovering over project card --- */
