@@ -82,6 +82,8 @@
 /* --- deals with project descriptions --- */
 #projectDescription {
   visibility: hidden;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -101,4 +103,17 @@
   -moz-transition: .3s ease;
   -webkit-transition: .3s ease;
   -ms-transition: .3s ease;
+}
+
+#descriptionText {
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+  overflow: scroll;
+}
+
+/* --- Lucent Surge --- */
+#lucentSurgeVideo {
+  width: 100%;
+  height: 75%;
 }
