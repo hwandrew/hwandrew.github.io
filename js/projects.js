@@ -9,38 +9,18 @@ function initDescription(clickId) {
         this.style.visibility = 'hidden';
     });
 
-    switch(clickId) {
-        case "LucentSurge":
-            loadLucentSurge();
-            break;
-        case "TerrainJumper":
-            loadTerrainJumper();
-            break;
-        case "LegendOfZelda":
-            loadLegendOfZelda();
-            break;
-        case "SpotifyVisualizer":
-            loadSpotifyVisualizer();
-            break;
-        default:
-            console.error(`id ${clickId} does not exist`);
-            break;
-    }
+    loadDescription(clickId);
 }
 
-function loadLucentSurge() {
+function loadDescription(clickId) {
     var descriptionBlock = document.getElementById('descriptionText');
-    descriptionBlock.innerHTML = "";
-}
-
-function loadTerrainJumper() {
-    var descriptionBlock = document.getElementById('descriptionText');
-}
-
-function loadLegendOfZelda() {
-    var descriptionBlock = document.getElementById('descriptionText');
-}
-
-function loadSpotifyVisualizer() {
-    var descriptionBlock = document.getElementById('descriptionText');
+    var descriptionPath = 'projectsHTML/' + clickId;
+    var xhttp = new XMLHttpRequest();
+    xhttp.open('GET', descriptionPath + '.html', true);
+    xhttp.send();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            descriptionBlock.innerHTML = this.responseText;
+        }
+    };
 }
