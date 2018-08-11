@@ -99,6 +99,7 @@
 
 .material-icons:hover {
   opacity: 0.7;
+  cursor: default;
   transition: .3s ease;
   -moz-transition: .3s ease;
   -webkit-transition: .3s ease;
