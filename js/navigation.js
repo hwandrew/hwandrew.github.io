@@ -49,7 +49,7 @@ function navigate(pageName, fromUserNavigation) {
   if (fromUserNavigation) {
     var stateObj = {pageName: pageName};
     if (pageName !== 'home') {
-      window.history.pushState(stateObj, '', pageName);
+      window.history.pushState(stateObj, '');
     }
     else {
       window.history.pushState(stateObj, '', '/');
