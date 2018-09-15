@@ -13,15 +13,34 @@ span {
 .contactContainer {
   margin-left: 15px;
   height: 33%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 75px auto;
+}
+
+.socialText {
+  align-self: center;
   justify-content: center;
+  opacity: 0;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
+}
+
+.contactContainer:hover .socialText {
+  opacity: 1;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -ms-transition: .3s ease;
 }
 
 #linkGit {
   font-size: 350%;
   color: black;
   vertical-align: middle;
+  align-self: center;
+  justify-content: center;
   opacity: 0.3;
   transition: .3s ease;
   -moz-transition: .3s ease;
@@ -41,6 +60,8 @@ span {
   font-size: 350%;
   color: black;
   vertical-align: middle;
+  align-self: center;
+  justify-content: center;
   opacity: 0.3;
   transition: .3s ease;
   -moz-transition: .3s ease;
@@ -56,15 +77,12 @@ span {
   -ms-transition: .3s ease;
 }
 
-/* #linkInsta {
-  font-size: 48px;
-  color: black;
-} */
-
 #linkEmail {
   font-size: 350%;
   color: black;
   vertical-align: middle;
+  align-self: center;
+  justify-content: center;
   opacity: 0.3;
   transition: .3s ease;
   -moz-transition: .3s ease;
