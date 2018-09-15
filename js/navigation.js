@@ -44,7 +44,6 @@ function navigate(pageName, fromUserNavigation) {
   currElement.className += ' navActive';
   currElement.children[0].className += ' textActive';
 
-
   /* --- Handle history --- */
   if (fromUserNavigation) {
     var stateObj = {pageName: pageName};
